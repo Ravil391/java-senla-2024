@@ -10,11 +10,11 @@ import java.util.regex.Pattern;
 
 public class Solution1 {
     public static void main(String[] args) {
-        // Вводная строка
+        // Строка
         String inputString = """
                 123503524523fgdkgjfkgkf123Ddsfdgfdsdfdsvjfkgjdfg
                 12356934524jjjdfsdfksdfhHGGFGDFJDSFDFJSIDFD.....123
-                """;
+                """; // Строка
         // Расчет суммы
         int result = getSum(inputString);
         assert (result == 24);
@@ -24,11 +24,9 @@ public class Solution1 {
     private static int getSum(String string) {     // Расчета суммы 
 
         int sum = 0;
-        // Паттерн для поиска цифр
-        Pattern pattern = Pattern.compile("\\d");
+        Pattern pattern = Pattern.compile("\\d"); // Паттерн для поиска 
         Matcher matcher = pattern.matcher(string);
-        // Проходим по каждой цифре и добавляем в сумму
-        while (matcher.find()) {
+        while (matcher.find()) { // Проходим по каждой цифре
             sum += Integer.parseInt(matcher.group());
         }
         // Возвращаем сумму чисел
