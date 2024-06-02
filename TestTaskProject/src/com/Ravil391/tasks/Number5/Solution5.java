@@ -20,12 +20,6 @@ public class Solution5 {
         items.add(new Book(7, 50, 345));
         items.add(new Book(10, 60, 521));
         items.add(new Book(12, 400, 500));
-        items.add(new Book(3, 20, 42));
-        items.add(new Book(5, 10, 23));
-        items.add(new Book(8, 100, 55));
-        items.add(new Book(19, 500, 821));
-        items.add(new Book(10, 112, 87));
-        items.add(new Book(13, 200, 254));
 
         items = safe.addItems(items);
 
