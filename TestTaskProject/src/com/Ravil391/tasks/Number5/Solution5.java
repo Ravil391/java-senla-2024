@@ -16,10 +16,10 @@ public class Solution5 {
         Safe safe = new Safe(50);
         List<Item> items = new ArrayList<>();
         items.add(new Book(2, 100, 123));
-        items.add(new Book(3, 200, 222));
-        items.add(new Book(7, 50, 345));
-        items.add(new Book(10, 60, 521));
-        items.add(new Book(12, 400, 500));
+        items.add(new Book(4, 100, 222));
+        items.add(new Book(7, 50, 346);
+        items.add(new Book(9, 40, 521));
+        items.add(new Book(15, 300, 500));
 
         items = safe.addItems(items);
 
