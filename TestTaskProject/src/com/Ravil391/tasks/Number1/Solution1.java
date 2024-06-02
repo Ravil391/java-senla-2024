@@ -12,18 +12,17 @@ public class Solution1 {
     public static void main(String[] args) {
         // Вводная строка
         String inputString = """
-                123fgdkgjfkgkf123jfkgjdfg
-                123jjjjhHGHGHGHKD.....123
+                123503524523fgdkgjfkgkf123Ddsfdgfdsdfdsvjfkgjdfg
+                12356934524jjjdfsdfksdfhHGGFGDFJDSFDFJSIDFD.....123
                 """;
         // Расчет суммы
         int result = getSum(inputString);
         assert (result == 24);
-        // Печатаем в консоль
-        System.out.println(result);
+        System.out.println(result);         // Печать
     }
 
-    // Метод расчета суммы чисел
-    private static int getSum(String string) {
+    private static int getSum(String string) {     // Расчета суммы 
+
         int sum = 0;
         // Паттерн для поиска цифр
         Pattern pattern = Pattern.compile("\\d");
